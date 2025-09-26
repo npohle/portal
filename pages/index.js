@@ -1,5 +1,6 @@
 import SmallCard from '../components/SmallCard';
 import { projectIcons } from '../components/Icons';
+import Link from 'next/link';
 
 import { projects } from '../utils/projectsData';
 
@@ -18,6 +19,11 @@ const Home = () => (
           />
         );
       })}
+    </div>
+    <div className="auth-links">
+      <Link href="/register">
+        <a className="auth-link register-link">Create Account</a>
+      </Link>
     </div>
   </div>
 );
